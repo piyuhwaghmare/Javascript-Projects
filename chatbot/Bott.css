@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#nav{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.content{
+    justify-content: space-around;
+    position: relative;
+    right: 200px;
+    top: 60px;
+    margin-left: 200px;
+    margin-right: 100px;
+}
+
+a{
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    color: white;
+    text-shadow: 5px 5px 10px whitesmoke;
+    text-decoration: none;
+}
+
+a:hover{
+    border-bottom: solid red 1px;
+    box-shadow: 5px 5px 5px red;
+}
+
+main{
+    width: 100vw;
+    display: flex;
+    position: absolute
+}
+
+#sec{
+    margin: 200px;
+    width: 300px;
+    align-items: center;
+    position: relative;
+    bottom: 100px;
+}
+
+header{
+    width: 100vw;
+    background-color: darkblue;
+    box-shadow: 10px, 10px, 10px, red;
+    background-image: linear-gradient(to bottom, rgb(29, 29, 109), rgb(5, 5, 126));
+}
+
+main{
+    background-color: darkblue;
+}
+
+h2{
+    font-size: 30px;
+    font-style: normal;
+    font-weight: bold;
+    text-shadow: 10px 10px 20px rgba(0,0,0,1);
+    color: white;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+}
+
+p{
+    font-size: 20px;
+    color: white;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+#btn{
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px black;
+    transition: all 1s ease-in-out;
+}
+
+#btn:hover{
+    background-color: rgb(127, 151, 171);
+}
+
+.img2{
+    border: 5px solid white;
+    box-shadow: 5px 5px 20px white;
+    transition: all 1s ease-in-out;
+}
+
+.img2:hover{
+    transform: scale(1.1);
+}
+
+#img1{
+    border: 5px solid white;
+    box-shadow: 5px 5px 20px white;
+}

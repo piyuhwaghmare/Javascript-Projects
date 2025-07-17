@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.clock {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 8px solid #333;
+    border-radius: 50%;
+    margin: 40px auto;
+    background: #fff;
+}
+
+.num {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: rotate(calc(30deg * var(--v))) translateY(-130px) rotate(calc(-30deg * var(--v))) translate(-50%, -50%);
+    transform-origin: center center;
+    font-size: 1.5em;
+    width: 40px;
+    text-align: center;
+    pointer-events: none;
+}
+
+.dot{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.digi-clock {
+    position: absolute;
+    top: 60%;
+    left: 36%;
+    width: 30%;
+    height: 10%;
+    background-color: #000;
+    bottom: 30%;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 18px;
+}
+
+.dh{
+    color:rgb(72, 196, 218)
+}
+
+.dm{
+    color: rgb(72, 218, 164);
+}
+
+.ds{
+    color: rgb(218, 72, 72);
+}
+
+.hour-hand, .min-hand, .sec-hand {
+    position: absolute;
+    transform-origin: 50% 100%;
+    background-color: #333;
+}
+
+.hour-hand {
+    width: 4px;
+    height: 60px;
+    top: 29%;
+    left: 50%;
+    border-radius: 4px;
+    transform: translate(-50%,0) rotate(90deg);
+    background-color:rgb(72, 196, 218);
+}
+
+.min-hand {
+    width: 3px;
+    height: 100px;
+    top: 15%;
+    left: 50%;
+    border-radius: 4px;
+    transform: translate(-50%,0) rotate(180deg);
+    background-color: rgb(72, 218, 164);
+}
+
+.sec-hand {
+    width: 2px;
+    height: 120px;
+    top: 8%;
+    left: 50%;
+    border-radius: 4px;
+    transform: translate(-50%,0) rotate(270deg);
+    background-color: rgb(218, 72, 72);
+}
